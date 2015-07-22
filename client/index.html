@@ -3,8 +3,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Personal Website">
+    <meta name="author" content="Jordan Harris">
 
     <title>jordan harris - developer</title>
 
@@ -12,7 +12,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="css/personal-website.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -50,10 +50,10 @@
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Projects</a>
+                        <a class="page-scroll" href="#projects">Projects</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Experience</a>
+                        <a class="page-scroll" href="#experience">Experience</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -88,8 +88,8 @@
                     <br>
                     <br>
                     <div class="text-center">
-                        <a href="#services" class="btn btn-primary btn-lg">Check out my projects</a>
-                        <a href="#portfolio" class="btn btn-primary btn-lg">See my programming experience</a>
+                        <a href="#projects" class="btn btn-primary btn-lg">Check out my projects</a>
+                        <a href="#experience" class="btn btn-primary btn-lg">See my programming experience</a>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -101,9 +101,9 @@
         <!-- /.container -->
     </section>
 
-    <!-- Services -->
+    <!-- Projects -->
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="services" class="services bg-primary">
+    <section id="projects" class="projects bg-primary">
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
@@ -179,8 +179,8 @@
         </div>
     </aside>
 
-    <!-- Portfolio -->
-    <section id="portfolio" class="portfolio">
+    <!-- Experience -->
+    <section id="experience" class="experience">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
@@ -237,8 +237,8 @@
                                 <li class="list-group-item">Git</li>
                             </ul>
                         </div>
-                        <h3><button id="ide" class="btn btn-primary btn-lg">Development Practices</button></h3>
-                        <div class="skills" id="ide-show">
+                        <h3><button id="practices" class="btn btn-primary btn-lg">Development Practices</button></h3>
+                        <div class="skills" id="practices-show">
                             <ul class="list-group">
                                 <li class="list-group-item">Agile Software Development</li>
                                 <li class="list-group-item">Behavior Driven Development</li>
@@ -292,20 +292,7 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Custom Theme JavaScript -->
     <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-
     // Scrolls to the selected menu item on the page
     $(function() {
         $('a[href*=#]:not([href=#])').click(function() {
@@ -326,50 +313,50 @@
     $('.skills').hide();
 
     $('#languages').click(function () {
-      if ( $( "#languages-show" ).is( ":hidden" ) ) {
-        $( "#languages-show" ).slideDown( "slow" );
+      if ($("#languages-show").is(":hidden")) {
+        $("#languages-show").slideDown("slow");
       } else {
-        $( "#languages-show" ).hide();
+        $("#languages-show").slideUp("slow");
       }
     });
 
     $('#frameworks').click(function () {
-      if ( $( "#frameworks-show" ).is( ":hidden" ) ) {
-        $( "#frameworks-show" ).slideDown( "slow" );
+      if ($("#frameworks-show" ).is(":hidden")) {
+        $("#frameworks-show").slideDown("slow");
       } else {
-        $( "#frameworks-show" ).hide();
+        $("#frameworks-show").slideUp("slow");
       }
     });
 
     $('#webdev').click(function () {
-      if ( $( "#webdev-show" ).is( ":hidden" ) ) {
-        $( "#webdev-show" ).slideDown( "slow" );
+      if ($("#webdev-show").is(":hidden")) {
+        $("#webdev-show" ).slideDown("slow");
       } else {
-        $( "#webdev-show" ).hide();
+        $("#webdev-show").slideUp("slow");
       }
     });
 
     $('#testing').click(function () {
-      if ( $( "#testing-show" ).is( ":hidden" ) ) {
-        $( "#testing-show" ).slideDown( "slow" );
+      if ($("#testing-show").is(":hidden")) {
+        $("#testing-show").slideDown("slow");
       } else {
-        $( "#testing-show" ).hide();
+        $("#testing-show").slideUp("slow");
       }
     });
 
     $('#version-control').click(function () {
-      if ( $( "#version-control-show" ).is( ":hidden" ) ) {
-        $( "#version-control-show" ).slideDown( "slow" );
+      if ($("#version-control-show").is(":hidden")) {
+        $("#version-control-show").slideDown("slow");
       } else {
-        $( "#version-control-show" ).hide();
+        $("#version-control-show").slideUp("slow");
       }
     });
 
-    $('#ide').click(function () {
-      if ( $( "#ide-show" ).is( ":hidden" ) ) {
-        $( "#ide-show" ).slideDown( "slow" );
+    $('#practices').click(function () {
+      if ($("#practices-show").is(":hidden")) {
+        $("#practices-show").slideDown("slow");
       } else {
-        $( "#ide-show" ).hide();
+        $("#practices-show").slideUp("slow");
       }
     });
     </script>
